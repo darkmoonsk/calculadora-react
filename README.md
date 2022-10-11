@@ -1,4 +1,4 @@
 # Calculadora
-Projeto realizado para o curso Formação React da DIO, uma calculadora usando a biblioteca React.
+Projeto realizado para o desafio do curso Formação React da DIO, uma calculadora feita usando a biblioteca React.
 
-### Acesse online no link: 
+### Acesse online no link: https://calculadora-react-sandy.vercel.app/
