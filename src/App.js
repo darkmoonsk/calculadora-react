@@ -18,7 +18,8 @@ function App() {
   };
 
   const handleDelete = () => {
-    setCurrentNumber(currentNumber.substring(0, currentNumber.length - 1));
+    const newNumber = currentNumber.substring(0,  currentNumber.length - 1)
+    setCurrentNumber(newNumber);
   };
 
   const handleDefineOperation = (operation) => {
@@ -43,9 +44,9 @@ function App() {
 
   const handleResult = (result) => {
     if(Number.isInteger(result)) {
-      setCurrentNumber(result);
+      setCurrentNumber(result.toString());
     }else {
-      setCurrentNumber(Number(result).toFixed(2));
+      setCurrentNumber(result.toFixed(2).toString());
     }
   }
 

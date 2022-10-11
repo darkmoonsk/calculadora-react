@@ -6,10 +6,11 @@ function Keyboard(props) {
   return (
     <KeyboardContainer>
         <Row>
+            <Button label="7" onClick={() => props.onHandleAddNumber("7")} />
             <Button label="8" onClick={() => props.onHandleAddNumber("8")} />
             <Button label="9" onClick={() => props.onHandleAddNumber("9")} />
             <Button label="C" onClick={() => props.onHandleClear()} />
-            <Button label="/" onClick={() => props.onHandleDefineOperation("/")} />
+            
         </Row>
         <Row>
             <Button label="4" onClick={() => props.onHandleAddNumber("4")} />
@@ -26,11 +27,12 @@ function Keyboard(props) {
         <Row>
             <Button label="." onClick={() => props.onHandleAddDot(".")} />
             <Button label="0" onClick={() => props.onHandleAddNumber("0")} />
-            <Button label="DEL" onClick={() => props.onHandleDelete()} />
+            <Button label="/" onClick={() => props.onHandleDefineOperation("/")} />
             <Button label="-"  onClick={() => props.onHandleDefineOperation("-")} />
         </Row>
         <Footer>
-             <Button label="="  onClick={() => props.onHandleCalc()} />
+            <Button label="DEL" onClick={() => props.onHandleDelete()} />
+            <Button label="="  onClick={() => props.onHandleCalc()} />
         </Footer>
     </KeyboardContainer>
   )
